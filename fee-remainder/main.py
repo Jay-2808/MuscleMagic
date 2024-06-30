@@ -25,3 +25,4 @@ if __name__ == '__main__':
     print("Starting Flask app...")
     ScheduleTask.run_schedule_task(CEO_Name,Contact,image_path,attachment_path)
     app.run(port=3000)
+    
