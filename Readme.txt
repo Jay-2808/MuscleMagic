@@ -1,87 +1,53 @@
-"""
-npm install firebase
+# MuscleMagic
 
------------------------------------------------------------------------------------------------------------
+MuscleMagic is a project management tool for gym administrators. It provides functionalities for managing gym memberships, sending fee reminders, and viewing user activities through an admin interface.
 
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
+## Features
 
-// Your web app's Firebase configuration
-const firebaseConfig = {
-  apiKey: "AIzaSyCjIHgsq8O7wo5rpoKgtA4HyZbqfbXLEH4",
-  authDomain: "muscle-magic-fees-reminder.firebaseapp.com",
-  projectId: "muscle-magic-fees-reminder",
-  storageBucket: "muscle-magic-fees-reminder.appspot.com",
-  messagingSenderId: "963097010463",
-  appId: "1:963097010463:web:fb37a98e0a909bc1e0102a"
-};
+- Admin login and authentication
+- Manage users (add, edit, delete)
+- Send fee reminders manually
+- Display user activities
+- Store and fetch data from Firestore
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-"""
+## Technologies Used
 
-------------------------------------------------------------------------------------------------------------------------------------------
+- Frontend: HTML, CSS, JavaScript
+- Backend: Python, Flask
+- Database: Firestore
 
-Use npm
+## Installation
 
-Use a <script> tag
-If you're already using NPM and a module bundler such as webpack or Rollup, you can run the following command to install the latest SDK (Learn more):
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/Jay-2808/MuscleMagic.git
+   cd MuscleMagic
 
-npm install firebase
-Then, initialise Firebase and begin using the SDKs for the products that you'd like to use.
+2. Set up a virtual environment and install dependencies:
+    python -m venv .venv
+    source .venv/bin/activate  # On Windows use `.venv\Scripts\activate`
+    pip install -r requirements.txt
 
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
-const firebaseConfig = {
-  apiKey: "AIzaSyCjIHgsq8O7wo5rpoKgtA4HyZbqfbXLEH4",
-  authDomain: "muscle-magic-fees-reminder.firebaseapp.com",
-  projectId: "muscle-magic-fees-reminder",
-  storageBucket: "muscle-magic-fees-reminder.appspot.com",
-  messagingSenderId: "963097010463",
-  appId: "1:963097010463:web:fb37a98e0a909bc1e0102a"
-};
-
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-Note: This option uses the modular JavaScript SDK, which provides a reduced SDK size.
-
-Learn more about Firebase for web: Get started, Web SDK API Reference, Samples
-
-------------------------------------------------------------------------------------------------------------------------------------------
+3. Set up Firestore:
+    1.Obtain the Firebase Admin SDK JSON file.
+    2.Place the JSON file in the project directory.
+    3.Update the path in your GetUserInfo.py file.
 
 
-Use npm
 
-Use a <script> tag
-If you don't use build tools, use this option to add and use the Firebase JS SDK. Use this option to get started, but it's not recommended for production apps. Learn more.
+#Usage
 
-Copy and paste these scripts into the bottom of your <body> tag, but before you use any Firebase services:
+1. Start the Flask application
+    python app.py
 
-<script type="module">
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
+2. Open your web browser and go to http://localhost:5000
 
-  // Your web app's Firebase configuration
-  const firebaseConfig = {
-    apiKey: "AIzaSyCjIHgsq8O7wo5rpoKgtA4HyZbqfbXLEH4",
-    authDomain: "muscle-magic-fees-reminder.firebaseapp.com",
-    projectId: "muscle-magic-fees-reminder",
-    storageBucket: "muscle-magic-fees-reminder.appspot.com",
-    messagingSenderId: "963097010463",
-    appId: "1:963097010463:web:fb37a98e0a909bc1e0102a"
-  };
 
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-</script>
-Are you using NPM and a bundler like webpack or Rollup? Take a look at the modular SDK .
+#Future Enhancements
+    Implement Bootstrap or React.js for frontend improvements.
+    Add AI/ML features for advanced user analytics.
+    Deploy the project on Vercel or AWS.
 
-Learn more about Firebase for web: Get started, Web SDK API Reference, Samples
+
+#Contact
+For any questions or feedback, please reach out at jayachandirank28@gmail.com
