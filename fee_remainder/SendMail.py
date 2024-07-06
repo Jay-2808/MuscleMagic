@@ -106,3 +106,5 @@ def send_fee_reminder(to, User_Id,User_Name,Current_Plan,Current_Plan_amount,Sta
         print(f"Sent email to {to}")
     except smtplib.SMTPException as e:
         print(f"Error sending email: {e}")
+
+    return "Email sent successfully",200

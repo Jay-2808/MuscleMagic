@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/members.css">
+    <script defer src="scripts/members.js"></script>
+    <title>Admin Page</title>
+</head>
+<body>
+    <header>
+        <img class="logo" alt="Muscle Magic Logo" src="/Projects/muscle-magic/static/images/logo_Muscle-magic_With-white-color.png">
+        <nav>
+            <ul>
+                <li><a href="\Projects\muscle-magic\static\home.html">Home</a></li>
+                <li><a href="members.html">Members</a></li>
+                <li><a href="\Projects\muscle-magic\static\dashboard.html">Dashboard</a></li>
+                <li><a href="\Projects\muscle-magic\static\home.html">Payments</a></li>
+                <li><a href="\Projects\muscle-magic\static\home.html">My Courses</a></li>
+                <li class="admin"><a href="#">ADMIN</a></li>
+            </ul>
+        </nav>
+        <div class="contact-info">
+            <span>📞 9626797999</span>
+            <span>✉️ support@musclemagic.in</span>
+        </div>
+    </header>
+
+    <div class="sidebar">
+        <ul>
+            <li><a href="members.html">View Members</a></li>
+            <li><a href="">Add members</a></li>
+            <li><a href="">Delete Members</a></li>
+            <li><a href="">Edit Members</a></li>
+            <li><a href="status.html">Member Status</a></li>
+            <li><a href="">Progress</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <h1>Members</h1>
+        <div>
+            <table id="members-table">
+                <thead>
+                    <tr>
+                        <th>Sno</th>
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>Current Plan</th>
+                        <th>Due Date</th>
+                    </tr>
+                </thead>
+                <tbody id="members-body">
+                </tbody>
+            </table>
+            <p id="list-demo"></p>
+        </div>
+    </main>
+</body>
+</html>

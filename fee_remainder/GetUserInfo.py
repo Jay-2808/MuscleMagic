@@ -1,17 +1,17 @@
 import firebase_admin
 from firebase_admin import credentials,firestore
+from flask import jsonify
 
 
 cred = credentials.Certificate(r"E:\Jay-Files\Code\Projects\muscle-magic\musclemagic-80175-firebase-adminsdk-lwua4-6ef322d0bd.json")
 firebase_admin.initialize_app(cred)
 db = firestore.client()
 
-users_ref = db.collection("users")
-docs = users_ref.stream()
-
 def Get_User_Info():
     Users=[]
-
+    users_ref = db.collection("users")
+    docs = users_ref.stream()
+    
     for doc in docs:
         user=doc.to_dict()
 
